@@ -1,0 +1,243 @@
+<!-- XML Declaration -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Declares namespace and where to find schema -->
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+  <!-- Example Hotel (Westin) -->
+  
+  <!-- Give the rating -->
+  <Hotel Rating="4.2">
+    
+    <!-- Give the name -->
+    <Name>Westin</Name>	
+    
+    <!-- Phone numbers -->
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    
+    <!-- Local airport closed to the hotel -->
+    <Address NearstAirport="Sky Harbor">
+      
+      <!-- Address Information: number, street, city, state, and zip --> 
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    
+    </Address>
+  </Hotel>
+
+  <!-- Additional 10 Hotels for file -->
+  
+  <!-- First Hotel -->
+  <!-- Give the rating -->
+  <Hotel Rating="4.5">
+    
+    <!-- Hotel name -->
+    <Name>Marriott Marquis</Name>
+    
+    <!-- Phone numbers for hotel -->
+    <Phone>212-398-1900</Phone>
+    
+    <!-- Address Information: number, street, city, state, and zip (includes airport)-->
+    <Address NearstAirport="JFK"> 
+      <Number>1535</Number>
+      <Street>Broadway</Street>
+      <City>New York</City>
+      <State>NY</State>
+      <Zip>10036</Zip>
+    
+    </Address>
+  </Hotel>
+
+  <!-- Second Hotel -->
+  <Hotel>
+	
+    <!-- Name of hotel -->
+    <Name>Hitching Horse Inn</Name>
+ 
+    <!-- Phone numbers for hotel -->
+    <Phone>605-494-0550</Phone>
+    <Phone>605-445-8667</Phone>
+
+    <!-- Address information -->
+    <Address NearstAirport="PIR"> 
+      <Number>635</Number>
+      <Street>N Euclid Ave</Street>
+      <City>Pierre</City>
+      <State>SD</State>
+      <Zip>57501</Zip>
+    
+    </Address>
+  </Hotel>
+
+  <!-- Third Hotel -->
+
+  <!-- Hotel rating -->
+  <Hotel Rating="4.3">
+
+    <!-- Hotel Name -->
+    <Name>Hampton Inn Selma</Name>
+
+    <!-- Hotel phone numbers -->		
+    <Phone>334-876-9995</Phone>
+
+    <!-- Address information -->
+    <Address NearstAirport="MGM"> 
+      <Number>2200</Number>
+      <Street>West Highland Avenue</Street>
+      <City>Selma</City>
+      <State>AL</State>
+      <Zip>36701</Zip>
+    
+    </Address>
+  </Hotel>
+
+  <!-- Fourth Hotel -->
+  <Hotel>
+    
+    <!-- Hotel Name -->
+    <Name>Sheraton Grand Los Angeles</Name>
+
+    <!-- Hotel Phone Numbers -->
+    <Phone>213-488-3500</Phone>
+ 
+    <!-- Hotel Address Information -->
+    <Address NearstAirport="LAX"> 
+      <Number>711</Number>
+      <Street>Hope St</Street>
+      <City>Los Angeles</City>
+      <State>CA</State>
+      <Zip>90017</Zip>
+    
+    </Address>
+  </Hotel>
+
+  <!-- Fifth Hotel -->
+
+  <!-- Hotel Rating -->
+  <Hotel Rating="4.7">
+  
+    <!-- Hotel Name -->
+    <Name>The Ritz-Carlton, Miami</Name>
+
+    <!-- Hotel Phone Numbers -->
+    <Phone>305-600-4500</Phone>
+    <Phone>800-542-8680</Phone>
+
+    <!-- Hotel Address Information -->
+    <Address NearstAirport="MIA"> 
+      <Number>1</Number>
+      <Street>Lincoln Rd</Street>
+      <City>Miami Beach</City>
+      <State>FL</State>
+      <Zip>33139</Zip>
+    
+    </Address>
+  </Hotel>
+
+  <!-- Sixth Hotel -->
+  <Hotel>
+     
+    <!-- Hotel Name -->
+    <Name>Orlando Hyatt House</Name>
+
+    <!-- Hotel Phone Numbers -->
+    <Phone>407-632-5000</Phone>
+
+    <!-- Hotel Address Information -->
+    <Address NearstAirport="MCO"> 
+      <Number>5472</Number>
+      <Street>Gateway Village Cir</Street>
+      <City>Orlando</City>
+      <State>FL</State>
+      <Zip>32812</Zip>
+    
+    </Address>
+  </Hotel>
+
+  <!-- Seventh Hotel -->
+  <Hotel Rating="4.0">
+  
+    <!-- Hotel Name -->
+    <Name>Cambria Hotel</Name>
+
+    <!-- Hotel Phone Numbers -->
+    <Phone>302-291-1131</Phone>
+
+    <!-- Hotel Address Information -->
+    <Address NearstAirport="GED"> 
+      <Number>17222</Number>
+      <Street>Hood Rd</Street>
+      <City>Rehoboth Beach</City>
+      <State>DE</State>
+      <Zip>19971</Zip>
+    
+    </Address>
+  </Hotel>
+
+  <!-- Eighth Hotel -->
+  <Hotel>
+   
+    <!-- Hotel Name -->
+    <Name>Radisson Blu Aqua Hotel</Name>
+
+    <!-- Hotel Phone Numbers -->
+    <Phone>312-565-1234</Phone>
+    <Phone>800-967-9033</Phone>
+
+    <!-- Hotel Address Information -->
+    <Address NearstAirport="ORD"> 
+      <Number>221</Number>
+      <Street>N Columbus Dr</Street>
+      <City>Chicago</City>
+      <State>IL</State>
+      <Zip>60601</Zip>
+
+    </Address>
+  </Hotel>
+
+  <!-- Ninth Hotel -->
+  <Hotel Rating="4.1">
+
+    <!-- Hotel Name -->
+    <Name>Best Western Plus</Name>
+
+    <!-- Hotel Phone Numbers -->
+    <Phone>602-244-9161</Phone>
+
+    <!-- Hotel Address Information -->
+    <Address NearstAirport="PHX"> 
+      <Number>2421</Number>
+      <Street>E University Dr</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85034</Zip>
+
+    </Address>
+  </Hotel>
+
+  <!-- Tenth Hotel Name -->
+  <Hotel>
+ 
+    <!-- Hotel Name -->
+    <Name>Little America Flagstaff</Name>
+
+    <!-- Hotel Phone Number -->
+    <Phone>928-779-7900</Phone>
+
+    <!-- Hotel Address Information -->
+    <Address NearstAirport="FLG"> 
+      <Number>2515</Number>
+      <Street>E Butler Ave</Street>
+      <City>Flagstaff</City>
+      <State>AZ</State>
+      <Zip>86004</Zip>
+
+    </Address>
+  </Hotel>
+
+<!-- End of XML -->
+</Hotels>
