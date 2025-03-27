@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotel>  <!-- ERROR 1: Root element name is "Hotel" instead of "Hotels" -->
+  
+  <!-- Hotel 1: Missing required "NearestAirport" attribute (ERROR 2) -->
+  <Hotel Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address>  <!-- ERROR 2: Missing NearestAirport attribute -->
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Hotel 2: Missing Phone element (ERROR 3) -->
+  <Hotel Rating="4.5">
+    <Name>Marriott Marquis</Name>
+    <!-- ERROR 3: No <Phone> elements -->
+    <Address NearestAirport="JFK">
+      <Number>1535</Number>
+      <Street>Broadway</Street>
+      <City>New York</City>
+      <State>NY</State>
+      <Zip>10036</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Hotel 3: Unclosed Address tag (ERROR 4) -->
+  <Hotel>
+    <Name>Hilton Chicago</Name>
+    <Phone>312-922-4400</Phone>
+    <Address NearestAirport="ORD">  <!-- ERROR 4: No closing </Address> -->
+      <Number>720</Number>
+      <Street>S Michigan Ave</Street>
+      <City>Chicago</City>
+      <State>IL</State>
+      <Zip>60605</Zip>
+    <!-- Missing closing tag -->
+  </Hotel>
+
+  <!-- Hotel 4: Two Names (ERROR 5) -->
+  <Hotel>
+    <Name>Hyatt Regency San Francisco</Name>
+    <Name>Duplicate Name</Name>  <!-- ERROR 5: Two <Name> elements -->
+    <Phone>415-788-1234</Phone>
+    <Address NearestAirport="SFO">
+      <Number>5</Number>
+      <Street>Embarcadero Center</Street>
+      <City>San Francisco</City>
+      <State>CA</State>
+      <Zip>94111</Zip>
+    </Address>
+  </Hotel>
+
+</Hotel>
